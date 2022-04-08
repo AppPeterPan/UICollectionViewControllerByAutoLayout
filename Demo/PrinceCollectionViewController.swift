@@ -15,20 +15,8 @@ class PrinceCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureCellSize()
     }
     
-    func configureCellSize() {
-        let itemSpace: Double = 4
-        let columnCount: Double = 3
-        let flowLayout = collectionViewLayout as? UICollectionViewFlowLayout
-        let width = floor((collectionView.bounds.width - itemSpace * (columnCount-1)) / columnCount)
-        flowLayout?.itemSize = CGSize(width: width, height: width)
-        flowLayout?.estimatedItemSize = .zero
-        flowLayout?.minimumInteritemSpacing = itemSpace
-        flowLayout?.minimumLineSpacing = itemSpace
-        
-    }
     
     // MARK: UICollectionViewDataSource
     

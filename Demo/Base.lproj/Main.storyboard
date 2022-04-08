@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="1" id="pVb-3z-Zpo">
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="4" minimumInteritemSpacing="4" id="pVb-3z-Zpo">
                             <size key="itemSize" width="100" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -24,14 +24,18 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PrinceCollectionViewCell" id="hl7-hF-ed0" customClass="PrinceCollectionViewCell" customModule="Demo" customModuleProvider="target">
-                                <rect key="frame" x="67" y="0.0" width="280" height="420"/>
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cvn-Ft-Ag8">
-                                    <rect key="frame" x="0.0" y="0.0" width="280" height="420"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic0" translatesAutoresizingMaskIntoConstraints="NO" id="Kg6-X8-H9w">
-                                            <rect key="frame" x="0.0" y="0.0" width="280" height="420"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="cq1-HU-D8M"/>
+                                                <constraint firstAttribute="width" secondItem="Kg6-X8-H9w" secondAttribute="height" multiplier="1:1" id="pkv-Gx-QJ8"/>
+                                            </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -43,6 +47,7 @@
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="imageView" destination="Kg6-X8-H9w" id="fvG-s4-35d"/>
+                                    <outlet property="imageWidthConstraint" destination="cq1-HU-D8M" id="kIt-V9-pec"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -54,7 +59,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OWb-s5-aq9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="676.81159420289862" y="-16.071428571428569"/>
+            <point key="canvasLocation" x="433" y="-15"/>
         </scene>
     </scenes>
     <resources>
